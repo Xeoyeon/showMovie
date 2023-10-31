@@ -1,0 +1,16 @@
+{
+    "plugins": ["import", "react"],
+    "extends": ["plugin:import/recommended", "plugin:react/recommended"],
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 11,
+    }
+}
