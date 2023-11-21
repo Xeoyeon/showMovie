@@ -14,7 +14,7 @@ export default function NotFound() {
       onClick={()=>navigate('/')} // home 경로로 되돌아오게
 
       style={{
-        fontSize:'32px',
+        fontSize:'22px',
         lineHeight:'1.6',
         color:'red',
         cursor:'pointer'

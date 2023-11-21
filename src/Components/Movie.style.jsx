@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 export const MovieDetailContainer =styled.div`
   color: black;
-
-
+  margin: 30px;
 `;
+
+export const MovieTitleContainer =styled.div`
+  margin-left: 30px;
+`;
+
 export const MoviesContainer = styled.div`
   display: flex;
   background-color: #22254b;

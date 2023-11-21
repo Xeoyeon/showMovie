@@ -1,5 +1,5 @@
 import React from 'react'
-import { MovieDetailContainer } from '../Components/Movie.style'
+import { MovieDetailContainer,MovieTitleContainer } from '../Components/Movie.style'
 import { useParams,useLocation } from 'react-router-dom'
 export const base_url = "https://image.tmdb.org/t/p/w1280/";
 export default function MovieDetail() {
@@ -15,9 +15,9 @@ export default function MovieDetail() {
                 src={base_url+state.poster_path} alt="영화 포스터"
             /> 
             {/* props가 state로 바뀜.. */}
-            <div>
+            <MovieTitleContainer>
                 <div style={{fontSize:"32px"}}>{title}</div>
-            </div>
+            </MovieTitleContainer>
         </div>
     </MovieDetailContainer>
   )

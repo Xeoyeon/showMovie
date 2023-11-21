@@ -13,11 +13,16 @@ export default function AdPage() {
     //클릭할 때마다 showAd 상태가 변경되어 광고를 켜거나 끌 수 있도록 합니다.
     //toggleAd 함수는 버튼을 클릭할 때 showAd 상태를 토글하여 광고를 켜거나 끕니다.
   return (
-    <div>
-        <button onClick={handleToggleClick}>
-            {showAd ? '광고 끄기':'광고 보기'}
-        </button>
+    <div style={{position:"relative"}}>
         <Ad showAd={showAd} />
+        <button 
+          onClick={handleToggleClick}
+          style={{background: 'inherit' , boxShadow:'none', borderRadius:'0', padding:'3px', margin:"3px",
+          borderColor:"white",
+          position:"absolute", bottom:"10px", right:"20px", color:"white"
+        }}>
+            {showAd ? '광고 끄기 X':'광고 보기'}
+        </button>
     </div>
   )
 }
